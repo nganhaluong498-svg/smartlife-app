@@ -17,7 +17,7 @@ export const PRODUCTS: Product[] = [
     price: '1,499K',
     productionCost: '750K',
     margin: '50%',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: '/images/starterkit.png',
     category: 'bundle',
     badge: 'forBeginners'
   },
@@ -29,7 +29,7 @@ export const PRODUCTS: Product[] = [
     price: '199K - 299K',
     productionCost: '85K',
     margin: '57%',
-    image: 'https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=800&q=80',
+    image: '/images/smartbulb.jpg',
     category: 'lighting'
   },
   {
@@ -40,7 +40,7 @@ export const PRODUCTS: Product[] = [
     price: '1,290K',
     productionCost: '680K',
     margin: '47%',
-    image: 'https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=800&q=80',
+    image: '/images/smartcam.jpg',
     category: 'security'
   },
   {
@@ -51,7 +51,7 @@ export const PRODUCTS: Product[] = [
     price: '350K - 490K',
     productionCost: '165K',
     margin: '53%',
-    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?w=800&q=80',
+    image: '/images/smartswitch.jpg',
     category: 'control'
   },
   {
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     price: '890K',
     productionCost: '420K',
     margin: '53%',
-    image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80',
+    image: '/images/smarthub.jpg',
     category: 'hub'
   }
 ];

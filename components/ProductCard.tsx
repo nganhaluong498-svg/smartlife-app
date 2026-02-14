@@ -13,6 +13,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, languag
   const t = translations[language].shop;
   
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    // Fallback to placeholder if local image fails
     e.currentTarget.src = `https://placehold.co/800x600/3A6AD6/white?text=${encodeURIComponent(product.name)}`;
   };
   
