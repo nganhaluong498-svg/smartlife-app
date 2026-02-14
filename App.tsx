@@ -314,8 +314,9 @@ const App: React.FC = () => {
         <div className="flex-1 relative group">
           <div className="absolute inset-0 bg-[#CADCFC]/30 rounded-[3rem] blur-3xl group-hover:bg-[#3A6AD6]/20 transition-all duration-700" />
           <img 
-            src="starterkit.png" 
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" 
             alt="Starter Kit Box" 
+            onError={(e) => e.currentTarget.src = 'https://placehold.co/800x600/3A6AD6/white?text=Starter+Kit'}
             className="w-full h-auto rounded-[3rem] shadow-2xl relative z-10 transform group-hover:scale-105 transition-transform duration-700" 
           />
         </div>

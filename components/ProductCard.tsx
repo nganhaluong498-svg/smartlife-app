@@ -11,12 +11,18 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, language }) => {
   const t = translations[language].shop;
+  
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.src = `https://placehold.co/800x600/3A6AD6/white?text=${encodeURIComponent(product.name)}`;
+  };
+  
   return (
     <div className="bg-white rounded-[2rem] shadow-sm overflow-hidden border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-500 group relative">
       <div className="relative h-56 overflow-hidden">
         <img 
           src={product.image} 
           alt={product.name} 
+          onError={handleImageError}
           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
         />
         <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] font-black text-[#3A6AD6] border border-[#CADCFC] shadow-sm uppercase tracking-widest">
